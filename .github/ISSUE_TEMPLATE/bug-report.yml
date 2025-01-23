@@ -1,5 +1,6 @@
 name: "\U0001F41E Bug report"
 description: Create a report to help us improve
+title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: textarea
@@ -16,10 +17,10 @@ body:
       label: Expected behavior
       placeholder: Expected behavior
     validations:
-      required: true  
+      required: true
 
-   - type: textarea
-    id: expected
+  - type: textarea
+    id: actual
     attributes:
       label: Actual behavior
       placeholder: Actual behavior
@@ -31,7 +32,7 @@ body:
     attributes:
       label: Version of libgit2
       description: |
-       (release number or SHA1)
+        (release number or SHA1)
       render: shell-script
 
   - type: textarea
@@ -39,4 +40,4 @@ body:
     attributes:
       label: Operating system(s) tested
       description: |
-       (release number or SHA1)
+        (release number or SHA1)
